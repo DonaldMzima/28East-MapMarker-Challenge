@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "strict": true,
+    "module": "es6",
+    "target": "es6",
+    "esModuleInterop": true,
+    "sourceMap": true,
+    "rootDir": "src",
+    "outDir": "dist",
+    "noEmitOnError": true,
+    "typeRoots": ["./node_modules/@types", "./src/types"],
+    "types": ["node", "google.maps"],
+    "allowJs": true
+  },
+  "include": ["src/**/*"]
+}
