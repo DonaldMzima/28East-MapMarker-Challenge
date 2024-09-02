@@ -25,7 +25,7 @@ function showWelcomeModal() {
 
 function closeWelcomeModal() {
   welcomeModal.clasLsist.add("hidden");
-  localStorage.setItem("welcomeModalShown", "true");
+  localStorage.setItem("welcomeModalShown", "false");
 }
 
 async function initializeApp() {
