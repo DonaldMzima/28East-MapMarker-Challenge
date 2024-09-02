@@ -1,3 +1,33 @@
+import {
+  initMap,
+  searchLocation,
+  addMarker,
+  loadGoogleMapsScript,
+} from "./mapService";
+import { GOOGLE_MAPS_API_KEY } from "./config";
+
+let map;
+let markerCount = 1000;
+const markerCounter = document.getElementById("marker-counter");
+const welcomeModal = document.getElementById("welcome-modal");
+const modalCloseButton = document.getElementById("modal-close");
+
+function updateMarkerCount() {
+  markerCount--;
+  markerCounter.textContent = `Markers: ${markerCount}`;
+}
+
+function showWelcomeModal() {
+  if (!localStorage.getItem("welcomeModalShown")) {
+    welcomeModal.classList.remove("hidden");
+  }
+}
+
+function closeWelcomeModal() {
+  welcomeModal.clasLsist.add("hidden");
+  localStorage.setItem("welcomeModalShown", "true");
+}
+
 async function initializeApp() {
   try {
     await loadGoogleMapsScript(GOOGLE_MAPS_API_KEY);
@@ -40,7 +70,7 @@ async function initializeApp() {
       }
     });
 
-    showWelcomeModal(); // Always show the modal
+    showWelcomeModal();
     modalCloseButton.addEventListener("click", closeWelcomeModal);
   } catch (error) {
     console.error("Failed to initialize app:", error);
