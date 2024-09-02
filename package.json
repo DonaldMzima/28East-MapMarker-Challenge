@@ -1,21 +1,21 @@
 {
-    "name": "google-maps-project",
-    "version": "1.0.0",
-    "description": "A Google Maps project with TypeScript and Tailwind CSS",
-    "source": "src/index.html",
-    "scripts": {
-        "start": "parcel",
-        "build": "parcel build",
-        "clean": "rm -rf dist .parcel-cache"
-    },
-    "devDependencies": {
-        "@types/google.maps": "^3.53.4",
-        "@types/node": "^14.14.31",
-        "parcel": "^2.8.3",
-        "typescript": "^4.9.5"
-    },
-    "dependencies": {
-        "dotenv": "^16.0.3"
-    },
-    "license": "MIT"
+  "name": "google-maps-project",
+  "version": "1.0.0",
+  "description": "A Google Maps project with TypeScript and Tailwind CSS",
+  "source": "src/index.html",
+  "scripts": {
+    "start": "parcel",
+    "build": "parcel build",
+    "clean": "rm -rf dist .parcel-cache"
+  },
+  "devDependencies": {
+    "@types/google.maps": "^3.53.4",
+    "@types/node": "^14.14.31",
+    "parcel": "^2.8.3",
+    "typescript": "^4.9.5"
+  },
+  "dependencies": {
+    "dotenv": "^16.0.3"
+  },
+  "license": "MIT"
 }
