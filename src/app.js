@@ -17,15 +17,15 @@ function updateMarkerCount() {
   markerCounter.textContent = `Markers: ${markerCount}`;
 }
 
-function showWelcomeModal() {
-  if (!localStorage.getItem("welcomeModalShown")) {
-    welcomeModal.classList.remove("hidden");
-  }
-}
+// function showWelcomeModal() {
+//   if (!localStorage.getItem("welcomeModalShown")) {
+//     welcomeModal.classList.remove("hidden");
+//   }
+// }
 
 function closeWelcomeModal() {
   welcomeModal.clasLsist.add("hidden");
-  localStorage.setItem("welcomeModalShown", "false");
+  localStorage.setItem("welcomeModalShown", "true");
 }
 
 async function initializeApp() {
