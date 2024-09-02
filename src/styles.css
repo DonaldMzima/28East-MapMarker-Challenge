@@ -121,6 +121,17 @@ body.bg-gray-100 {
   box-shadow: 0 0 0 4px rgba(66, 153, 225, 0.5);
 }
 
+.footer {
+  text-align: center;
+  padding: 1rem;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  color: #555;
+  font-size: 0.875rem;
+}
+
 .hidden {
   display: none;
 }
