@@ -132,7 +132,7 @@ body.bg-gray-100 {
   color: #4a5568;
   padding: 12px;
   background-color: #f1f3f4;
-  border: 2px solid #4285f4;
+  border: 2px solid #3e9aac;
   border-radius: 8px;
 }
 
@@ -161,7 +161,7 @@ body.bg-gray-100 {
 .map-icon {
   margin-right: 8px;
   font-size: 1.25rem;
-  color: #34a853;
+  color: #3e9aac;
 }
 
 .modal-list {
@@ -177,7 +177,7 @@ body.bg-gray-100 {
 
 .modal-button {
   padding: 8px 16px;
-  background-color: #4299e1;
+  background-color: #3e9aac;
   color: white;
   width: 12rem;
   font-size: 1rem;
@@ -215,7 +215,7 @@ body.bg-gray-100 {
 
 .footer a {
   text-decoration: none;
-  color: #007bff;
+  color: #3e9aac;
   margin: 0.25rem 0;
 }
 
