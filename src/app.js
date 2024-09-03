@@ -24,7 +24,7 @@ function showWelcomeModal() {
 }
 
 function closeWelcomeModal() {
-  welcomeModal.clasLsist.add("hidden");
+  welcomeModal.classList.add("hidden");
   localStorage.setItem("welcomeModalShown", "true");
 }
 
@@ -48,11 +48,12 @@ async function initializeApp() {
         return;
       }
 
+      // If the place has a geometry, then present it on the map.
       if (place.geometry.viewport) {
         map.fitBounds(place.geometry.viewport);
       } else {
         map.setCenter(place.geometry.location);
-        map.setZoom(17);
+        map.setZoom(17); // Zoom in to the location
       }
 
       addMarkerAndUpdateCount(place.geometry.location);

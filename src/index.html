@@ -9,6 +9,15 @@
 </head>
 
 <body class="bg-gray-100">
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="brand-logo">28East Challenge</a>
+            
+           
+        </div>
+    </nav>
+
     <div class="container">
         <h1 class="title">28East Technical Challenge</h1>
         <div class="search-bar">
@@ -19,9 +28,15 @@
         <p class="modal-list">
             This app allows you to interact with Google Maps 😄 :
             <ul class="modal-text">
-                <li>Click on the map to add markers</li>
-                <li>Search for locations using the search bar</li>
-                <li>View the total number of markers placed</li>
+                <li class="map-list-item">
+                    <span class="map-icon">📍</span>Click on the map to add markers
+                </li>
+                <li class="map-list-item">
+                    <span class="map-icon">🔍</span>Search for locations using the search bar
+                </li>
+                <li class="map-list-item">
+                    <span class="map-icon">📊</span>View the total number of markers placed
+                </li>
             </ul>
         </p>
     </div>
@@ -37,6 +52,14 @@
     </footer>
 
     <script type="module" src="app.js"></script>
+    <script>
+        const toggleButton = document.getElementById('nav-toggle');
+        const navMenu = document.getElementById('nav-menu');
+
+        toggleButton.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+        });
+    </script>
 </body>
 
 </html>
